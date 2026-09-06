@@ -21,7 +21,7 @@ const duckSansDisplay = localFont({
     },
   ],
   variable: "--font-duck-sans-display",
-});-+
+});
 
 const duckSansProduct = localFont({
   src: [
