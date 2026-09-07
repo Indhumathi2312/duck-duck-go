@@ -555,7 +555,7 @@ export default function Navbar() {
                 <ul className="space-y-2.5 font-medium">
                   <li>
                     <Link href="#" className="hover:text-black block transition">
-                      What's New
+                      What&apos;s New
                     </Link>
                   </li>
                   <li>

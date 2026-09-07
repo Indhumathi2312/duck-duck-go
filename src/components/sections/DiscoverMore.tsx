@@ -232,7 +232,7 @@ export default function DiscoverMore() {
                         <span className="font-bold">Duck.ai Chat:</span> Anonymous AI models enabled.
                       </div>
                       <div className="bg-blue-50 p-3 rounded-2xl text-xs text-blue-900 font-medium">
-                        "Summarize quantum computing in 3 bullet points privately."
+                        &quot;Summarize quantum computing in 3 bullet points privately.&quot;
                       </div>
                     </div>
                   )}

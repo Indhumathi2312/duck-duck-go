@@ -83,12 +83,21 @@ function FirefoxLogo({ className = "w-7 h-7" }: { className?: string }) {
   );
 }
 
-function BraveLogo({ className = "w-7 h-7" }: { className?: string }) {
+function BraveLogo({ className = "w-8 h-8" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 48 48" fill="none">
-      <path d="M24 4L8 10v14c0 10.5 6.8 20 16 23 9.2-3 16-12.5 16-23V10L24 4z" fill="#FF5500" />
-      <path d="M24 10l-9 3.5v9.5c0 6 3.8 11.5 9 13.5 5.2-2 9-7.5 9-13.5v-9.5L24 10z" fill="#FF3300" />
-      <path d="M19 22h10M24 18v8" stroke="#FFF" strokeWidth="2.5" strokeLinecap="round" />
+    <svg className={className} viewBox="0 0 32 32" fill="none">
+      <path
+        d="M16 2L6 6v7.5c0 7.2 4.2 13.5 10 16.5 5.8-3 10-9.3 10-16.5V6L16 2z"
+        fill="#FF5500"
+      />
+      <path
+        d="M16 4.5l-7 2.8v5.6c0 5.4 3.1 10.1 7 12.4 3.9-2.3 7-7 7-12.4V7.3L16 4.5z"
+        fill="#E04000"
+      />
+      <path d="M11 12l2.5-2 2.5 1.5 2.5-1.5 2.5 2-1 4.5-4 3-4-3-1-4.5z" fill="#FFFFFF" />
+      <path d="M13.5 14h5l-2.5 3-2.5-3z" fill="#FF5500" />
+      <circle cx="13" cy="12.5" r="0.8" fill="#111" />
+      <circle cx="19" cy="12.5" r="0.8" fill="#111" />
     </svg>
   );
 }
@@ -96,15 +105,15 @@ function BraveLogo({ className = "w-7 h-7" }: { className?: string }) {
 function BrowserHeaderLogo({ id }: { id: BrowserId }) {
   switch (id) {
     case "chrome":
-      return <ChromeLogo className="w-7 h-7" />;
+      return <ChromeLogo className="w-8 h-8" />;
     case "edge":
-      return <EdgeLogo className="w-7 h-7" />;
+      return <EdgeLogo className="w-8 h-8" />;
     case "safari":
-      return <SafariLogo className="w-7 h-7" />;
+      return <SafariLogo className="w-8 h-8" />;
     case "firefox":
-      return <FirefoxLogo className="w-7 h-7" />;
+      return <FirefoxLogo className="w-8 h-8" />;
     case "brave":
-      return <BraveLogo className="w-7 h-7" />;
+      return <BraveLogo className="w-8 h-8" />;
   }
 }
 
@@ -279,18 +288,20 @@ export default function ComparisonSection() {
         {/* Matrix Table Box */}
         <div className="bg-white/60 backdrop-blur-xs rounded-[32px] p-4 sm:p-8 border border-gray-100/80 shadow-xs mt-8">
           {/* Header Row: Selected Browser Logo vs DuckDuckGo Logo */}
-          <div className="flex items-center justify-end gap-10 px-6 mb-4">
-            <div className="flex items-center justify-center w-8 h-8">
-              <BrowserHeaderLogo id={selectedBrowser} />
-            </div>
-            <div className="flex items-center justify-center w-8 h-8">
-              <Image
-                src="/images/logo_social-media.png"
-                alt="DuckDuckGo"
-                width={32}
-                height={32}
-                className="w-7 h-7 object-contain"
-              />
+          <div className="flex items-center justify-end px-4 sm:px-6 mb-4">
+            <div className="flex items-center gap-10 shrink-0 px-2">
+              <div className="w-8 flex items-center justify-center">
+                <BrowserHeaderLogo id={selectedBrowser} />
+              </div>
+              <div className="w-8 flex items-center justify-center">
+                <Image
+                  src="/images/logo_social-media.png"
+                  alt="DuckDuckGo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-contain"
+                />
+              </div>
             </div>
           </div>
 
