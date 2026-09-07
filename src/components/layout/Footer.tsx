@@ -27,7 +27,7 @@ export default function Footer() {
               <a href="#" className="hover:underline">About Our Browser</a>
             </li>
             <li>
-              <a href="#" className="hover:underline">What's New</a>
+              <a href="#" className="hover:underline">What&apos;s New</a>
             </li>
             <li>
               <a href="#" className="hover:underline">Compare Privacy</a>
@@ -83,7 +83,7 @@ export default function Footer() {
             About DuckDuckGo
           </h3>
           <p className="text-sm text-gray-700 leading-relaxed font-normal">
-            At DuckDuckGo, we believe the best way to protect your personal information from hackers, scammers, and privacy-invasive companies is to stop it from being collected at all. That's why millions of people{" "}
+            At DuckDuckGo, we believe the best way to protect your personal information from hackers, scammers, and privacy-invasive companies is to stop it from being collected at all. That&apos;s why millions of people{" "}
             <a href="#" className="text-[#3B82F6] hover:underline font-medium">
               choose DuckDuckGo over Chrome and other browsers
             </a>{" "}

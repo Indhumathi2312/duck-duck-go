@@ -14,7 +14,7 @@ const faqData: FAQItem[] = [
     question: "What is DuckDuckGo?",
     answer: (
       <p className="text-sm sm:text-base text-gray-800 leading-relaxed font-normal">
-        At DuckDuckGo, we believe the best way to protect your personal information from hackers, scammers, and privacy-invasive companies is to stop it from being collected at all. That's why millions of people{" "}
+        At DuckDuckGo, we believe the best way to protect your personal information from hackers, scammers, and privacy-invasive companies is to stop it from being collected at all. That&apos;s why millions of people{" "}
         <a href="#" className="text-[#3B82F6] hover:underline font-medium">
           choose DuckDuckGo over Chrome and other browsers
         </a>{" "}
@@ -39,10 +39,10 @@ const faqData: FAQItem[] = [
     answer: (
       <div className="text-sm sm:text-base text-gray-800 leading-relaxed font-normal space-y-4">
         <p>
-          If you're like most people on the Internet, you use Google to search the web and Google Chrome to browse the web. That means, by default, Google can keep track of every single search you make and website you visit. On those websites, other companies may also track you.
+          If you&apos;re like most people on the Internet, you use Google to search the web and Google Chrome to browse the web. That means, by default, Google can keep track of every single search you make and website you visit. On those websites, other companies may also track you.
         </p>
         <p>
-          DuckDuckGo is an independent Google alternative that also lets you search and browse the web, but we don't track your searches or browsing history, and our{" "}
+          DuckDuckGo is an independent Google alternative that also lets you search and browse the web, but we don&apos;t track your searches or browsing history, and our{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             browsers
           </a>{" "}
@@ -58,21 +58,13 @@ const faqData: FAQItem[] = [
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             increased encryption
           </a>
-          ,{" "}
+          , and{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
-            email protection
+            private search
           </a>
-          , and more, making it the most comprehensive protection you can get with one download. Plus,{" "}
-          <a href="#" className="text-[#3B82F6] hover:underline font-medium">
-            DuckDuckGo subscribers
-          </a>{" "}
-          get four additional features: a fast and simple{" "}
+          . We also offer paid subscriptions to Privacy Pro, which includes access to our{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             VPN
-          </a>
-          , access to advanced AI models in{" "}
-          <a href="#" className="text-[#3B82F6] hover:underline font-medium">
-            Duck.ai
           </a>
           , a{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
@@ -82,7 +74,7 @@ const faqData: FAQItem[] = [
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             Identity Theft Restoration
           </a>{" "}
-          service. That's how DuckDuckGo helps protect you in a nutshell.{" "}
+          service. That&apos;s how DuckDuckGo helps protect you in a nutshell.{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             Learn more
           </a>
@@ -100,7 +92,7 @@ const faqData: FAQItem[] = [
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             never tracks you
           </a>
-          . And when you leave our search engine and use our browsers or extensions to visit other sites, we aim to protect your privacy as much as possible. No service can eliminate all hidden tracking or all profiling online because trackers are always trying to evade specific protections. To be effective, our protections continually evolve to mitigate this while avoiding website breakage. That's also why we offer multiple types of{" "}
+          . And when you leave our search engine and use our browsers or extensions to visit other sites, we aim to protect your privacy as much as possible. No service can eliminate all hidden tracking or all profiling online because trackers are always trying to evade specific protections. To be effective, our protections continually evolve to mitigate this while avoiding website breakage. That&apos;s also why we offer multiple types of{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             web tracking protections
           </a>
@@ -134,7 +126,7 @@ const faqData: FAQItem[] = [
           , which all help cover different tracking angles. Our{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             list of trackers
-          </a>{" "}
+          </a>
           is open source, along with the{" "}
           <a href="#" className="text-[#3B82F6] hover:underline font-medium">
             list of exceptions
@@ -152,7 +144,7 @@ const faqData: FAQItem[] = [
     question: "How many people use DuckDuckGo?",
     answer: (
       <p className="text-sm sm:text-base text-gray-800 leading-relaxed font-normal">
-        Our best guess — over 100 million people! We don't track our users, so it's impossible for us to know how many people in total actually use our product. However, we can make an estimate based on the number of searches we get each month. Thanks to all these users, DuckDuckGo{" "}
+        Our best guess — over 100 million people! We don&apos;t track our users, so it&apos;s impossible for us to know how many people in total actually use our product. However, we can make an estimate based on the number of searches we get each month. Thanks to all these users, DuckDuckGo{" "}
         <a href="#" className="text-[#3B82F6] hover:underline font-medium">
           holds the #2 position in mobile search market share
         </a>{" "}

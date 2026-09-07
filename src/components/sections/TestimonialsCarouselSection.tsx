@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import {
   TestimonialsData,
   defaultTestimonialsData,
@@ -106,7 +105,7 @@ export default function TestimonialsCarouselSection({
                     {item.id === "wired" ? (
                       <>
                         <span className="underline underline-offset-4 decoration-2 decoration-gray-900 font-semibold">
-                          you're getting
+                          you&apos;re getting
                         </span>{" "}
                         <span className="underline underline-offset-4 decoration-2 decoration-gray-900 font-semibold">
                           maximum protection
