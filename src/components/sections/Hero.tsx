@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="max-w-4xl w-full text-center space-y-8 sm:space-y-10 z-10 relative">
         {/* Main Headline */}
-        <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-[52px] lg:text-[58px] leading-[1.16] text-[#1E1E1E] tracking-tight max-w-[760px] mx-auto">
+        <h1 className="font-display font-semibold text-3xl sm:text-4xl md:text-[52px] lg:text-[50px] leading-[1.16] text-[#1E1E1E] tracking-tight max-w-[760px] mx-auto">
           Switch to DuckDuckGo.<br />
           <span className="inline-flex items-center justify-center gap-1.5 flex-wrap mt-1">
             <span>It’s private</span>
@@ -53,7 +53,7 @@ export default function Hero() {
           {/* Card 2: Browser Download */}
           <div className="w-full sm:w-[350px] bg-white rounded-[28px] p-6 sm:p-7 flex flex-col items-center justify-between text-center border border-gray-200/70 shadow-[0_8px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)] transition-all min-h-[300px] relative">
             {/* Top Left Badge */}
-            <div className="absolute -top-3 left-6 sm:left-7 bg-[#D2EAFC] text-[#1B6CA8] text-[10px] sm:text-[11px] font-extrabold px-3 py-1 rounded-full tracking-wider uppercase shadow-2xs z-10">
+            <div className="absolute -top-3 left-6 sm:left-7 bg-[#D2EAFC] text-[#1B6CA8] text-[10px] sm:text-[11px] font-semibold px-3 py-1 rounded-full tracking-wider uppercase shadow-2xs z-10">
               Best Privacy
             </div>
 

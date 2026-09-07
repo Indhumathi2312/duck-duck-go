@@ -1,8 +1,68 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'DuckSansDisplay';
+  src: url('/fonts/DuckSansDisplay-Regular.woff2') format('woff2'),
+       url('/fonts/DuckSansDisplay-Regular.woff') format('woff'),
+       url('/fonts/DuckSansDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DuckSansDisplay';
+  src: url('/fonts/DuckSansDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/DuckSansDisplay-Medium.woff') format('woff'),
+       url('/fonts/DuckSansDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DuckSansDisplay';
+  src: url('/fonts/DuckSansDisplay-Bold.woff2') format('woff2'),
+       url('/fonts/DuckSansDisplay-Bold.woff') format('woff'),
+       url('/fonts/DuckSansDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DuckSansProduct';
+  src: url('/fonts/DuckSansProduct-Regular.woff2') format('woff2'),
+       url('/fonts/DuckSansProduct-Regular.woff') format('woff'),
+       url('/fonts/DuckSansProduct-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DuckSansProduct';
+  src: url('/fonts/DuckSansProduct-Medium.woff2') format('woff2'),
+       url('/fonts/DuckSansProduct-Medium.woff') format('woff'),
+       url('/fonts/DuckSansProduct-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DuckSansProduct';
+  src: url('/fonts/DuckSansProduct-Bold.woff2') format('woff2'),
+       url('/fonts/DuckSansProduct-Bold.woff') format('woff'),
+       url('/fonts/DuckSansProduct-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: var(--font-duck-sans-product), Arial, sans-serif;
-  --font-display: var(--font-duck-sans-display), Arial, sans-serif;
+  --font-sans: var(--font-duck-sans-product), 'DuckSansProduct', sans-serif;
+  --font-display: var(--font-duck-sans-display), 'DuckSansDisplay', sans-serif;
 
   --color-primary-orange: #f05f2b;
   --color-primary-orange-hover: #cc3b0a;
@@ -12,9 +72,43 @@
   --color-text-dark: #ffffff;
 }
 
-body {
+body, html {
+  font-family: var(--font-duck-sans-product), 'DuckSansProduct', sans-serif;
   background-color: var(--color-bg-light);
   color: var(--color-text-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-duck-sans-display), 'DuckSansDisplay', var(--font-duck-sans-product), 'DuckSansProduct', sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,3 +117,5 @@ body {
     color: var(--color-text-dark);
   }
 }
+
+
